@@ -1,0 +1,309 @@
+
+   /* MAIN NAVBAR */
+.navbar-wrapper {
+    width: 100%;
+display: flex;
+    justify-content: center;
+    padding: 32px 20px;
+}
+.navbar {
+    width: min(500px, 100%);
+    min-height: 48px;
+
+background: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 18px;
+
+    border-radius: 4px;
+
+    box-shadow:
+        0 4px 8px rgba(0, 0, 0, 0.08),
+        0 2px 4px rgba(0, 0, 0, 0.05);
+
+    position: relative;
+    z-index: 100;
+}
+   /* LOGO */
+.logo {
+    font-size: 11px;
+    font-weight: 700;
+    color: #48a667;
+
+    user-select: none;
+}
+   /* NAV MENU */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    flex: 1;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+}
+.nav-links a {
+    text-decoration: none;
+
+    font-size: 8px;
+    font-weight: 500;
+
+    color: #62957a;
+
+    transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #319356;
+}
+/*
+   CREATE ACCOUNT BUTTON
+ */
+.account-btn {
+    border: none;
+    background: #48a667;
+    color: white;
+
+    font-size: 7px;
+    font-weight: 700;
+
+    padding: 7px 9px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.account-btn:hover {
+    background: #388e56;
+}
+/* 
+   HAMBURGER*/
+
+.hamburger {
+    display: none;
+
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
+
+    width: 28px;
+    padding: 5px;
+}
+.hamburger span {
+    display: block;
+
+    height: 2px;
+    width: 20px;
+
+    background: #48a667;
+
+    margin: 4px 0;
+}
+/* 
+   CLOSE BUTTON
+*/
+
+.close-btn {
+    display: none;
+
+    background: none;
+    border: none;
+
+    color: white;
+    font-size: 24px;
+line-height: 1;
+
+cursor: pointer;
+}
+
+/* 
+   TABLET
+   768px - 1023px
+ */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .navbar-wrapper {
+        padding: 32px 20px;
+    }
+    .navbar {
+        width: 330px;
+
+        min-height: 66px;
+
+        background: #48a667;
+
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+
+        padding: 13px 14px;
+
+        border-radius: 4px;
+
+        box-shadow:
+ 0 4px 8px rgba(0, 0, 0, 0.15);
+
+    transition: 0.3s ease;
+    }
+
+    .logo {
+ color: white;
+ font-size: 9px;
+ margin-bottom: 10px;
+    }
+    .hamburger {
+        display: none;
+    }
+
+    .nav-menu {
+ width: 100%;
+
+ display: flex;
+
+        flex-direction: row;
+
+align-items: center;
+justify-content: space-between;
+
+        gap: 0;
+    }
+
+    .nav-links {
+  display: flex;
+
+ flex-direction: row;
+align-items: center;
+        gap: 28px;
+width: auto;
+    }
+
+    .nav-links a {
+        color: white;
+        font-size: 7px;
+    }
+    .account-btn {
+        background: white;
+        color: #48a667;
+        font-size: 7px;
+
+        padding: 6px 8px;
+    }
+    .close-btn {
+        display: none;
+    }
+}
+/* 
+   MOBILE
+   BELOW 767px
+ */
+@media (max-width: 767px) {
+
+    .navbar-wrapper {
+        min-height: 100vh;
+
+        padding: 32px 20px;
+
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .navbar {
+        width: 160px;
+        min-height: 174px;
+
+        background: #48a667;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: stretch;
+        justify-content: flex-start;
+
+        padding: 14px 13px;
+
+        border-radius: 4px;
+
+        box-shadow:
+            0 4px 8px rgba(0, 0, 0, 0.15);
+
+        transition: 0.3s ease;
+    }
+
+    .logo {
+        color: white;
+
+        font-size: 9px;
+        font-weight: 700;
+
+        margin-bottom: 17px;
+    }
+
+    /* Hide hamburger in opened menu */
+    .hamburger {
+        display: none;
+    }
+
+    .nav-menu {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 0;
+
+        flex: 1;
+    }
+    .nav-links {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 16px;
+    }
+    .nav-links a {
+        color: white;
+        font-size: 7px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+  .account-btn {
+        margin-top: auto;
+ background: white;
+color: #48a667;
+        font-size: 7px;
+
+  padding: 6px 9px;
+
+ margin-bottom: 1px;
+    }
+    .close-btn {
+        display: none;
+    }
+}
+/* 
+   SMALL MOBILE
+*/
+@media (max-width: 380px) {
+    .navbar {
+width: 155px;
+    }
+    .nav-links {
+        gap: 15px;
+    }
+    .nav-links a {
+        font-size: 6.5px;
+    }
+}
