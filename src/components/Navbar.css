@@ -1,16 +1,19 @@
+/* 
+   MAIN NAVBAR WRAPPER
+ */
 
-   /* MAIN NAVBAR */
 .navbar-wrapper {
     width: 100%;
-display: flex;
+    display: flex;
     justify-content: center;
     padding: 32px 20px;
 }
+
 .navbar {
-    width: min(500px, 100%);
+    width: 500px;
     min-height: 48px;
 
-background: #ffffff;
+    background: #ffffff;
 
     display: flex;
     align-items: center;
@@ -27,15 +30,23 @@ background: #ffffff;
     position: relative;
     z-index: 100;
 }
-   /* LOGO */
+
+
+/* 
+   LOGO
+*/
+
 .logo {
     font-size: 11px;
     font-weight: 700;
     color: #48a667;
-
-    user-select: none;
 }
-   /* NAV MENU */
+
+
+/*
+   NAV MENU
+ */
+
 .nav-menu {
     display: flex;
     align-items: center;
@@ -49,23 +60,24 @@ background: #ffffff;
     align-items: center;
     gap: 19px;
 }
+
 .nav-links a {
     text-decoration: none;
-
     font-size: 8px;
     font-weight: 500;
-
     color: #62957a;
-
     transition: 0.2s ease;
 }
 
 .nav-links a:hover {
     color: #319356;
 }
-/*
-   CREATE ACCOUNT BUTTON
- */
+
+
+/* 
+   CREATE ACCOUNT
+*/
+
 .account-btn {
     border: none;
     background: #48a667;
@@ -75,16 +87,22 @@ background: #ffffff;
     font-weight: 700;
 
     padding: 7px 9px;
+
     border-radius: 2px;
+
     cursor: pointer;
+
     transition: 0.2s ease;
 }
 
 .account-btn:hover {
     background: #388e56;
 }
+
+
 /* 
-   HAMBURGER*/
+   HAMBURGER
+ */
 
 .hamburger {
     display: none;
@@ -97,16 +115,19 @@ background: #ffffff;
     width: 28px;
     padding: 5px;
 }
+
 .hamburger span {
     display: block;
 
-    height: 2px;
     width: 20px;
+    height: 2px;
 
     background: #48a667;
 
     margin: 4px 0;
 }
+
+
 /* 
    CLOSE BUTTON
 */
@@ -114,125 +135,127 @@ background: #ffffff;
 .close-btn {
     display: none;
 
-    background: none;
+    background: transparent;
     border: none;
 
     color: white;
-    font-size: 24px;
-line-height: 1;
 
-cursor: pointer;
+    font-size: 24px;
+
+    cursor: pointer;
 }
 
-/* 
+
+/*
    TABLET
    768px - 1023px
  */
+
 @media (min-width: 768px) and (max-width: 1023px) {
 
     .navbar-wrapper {
-        padding: 32px 20px;
+        width: 100%;
+        padding: 0;
     }
-    .navbar {
-        width: 330px;
 
-        min-height: 66px;
+    .navbar {
+        width: 100%;
+        min-height: 70px;
 
         background: #48a667;
 
+        border-radius: 0;
+
+        padding: 15px 25px;
+
+        box-shadow: none;
+
         display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-
-        padding: 13px 14px;
-
-        border-radius: 4px;
-
-        box-shadow:
- 0 4px 8px rgba(0, 0, 0, 0.15);
-
-    transition: 0.3s ease;
+        flex-direction: row;
+        align-items: center;
     }
 
     .logo {
- color: white;
- font-size: 9px;
- margin-bottom: 10px;
-    }
-    .hamburger {
-        display: none;
+        color: white;
+        font-size: 14px;
     }
 
     .nav-menu {
- width: 100%;
-
- display: flex;
+        display: flex;
 
         flex-direction: row;
 
-align-items: center;
-justify-content: space-between;
+        align-items: center;
+        justify-content: flex-end;
 
-        gap: 0;
+        gap: 30px;
     }
 
     .nav-links {
-  display: flex;
+        display: flex;
+        flex-direction: row;
 
- flex-direction: row;
-align-items: center;
-        gap: 28px;
-width: auto;
+        align-items: center;
+
+        gap: 30px;
     }
 
     .nav-links a {
         color: white;
-        font-size: 7px;
+        font-size: 10px;
     }
+
     .account-btn {
         background: white;
         color: #48a667;
-        font-size: 7px;
 
-        padding: 6px 8px;
+        font-size: 9px;
+
+        padding: 7px 10px;
     }
+
+    .hamburger {
+        display: none;
+    }
+
     .close-btn {
         display: none;
     }
 }
+
+
 /* 
    MOBILE
    BELOW 767px
  */
+
 @media (max-width: 767px) {
 
     .navbar-wrapper {
+        width: 100%;
+        padding: 0;
+
+        display: block;
+
         min-height: 100vh;
-
-        padding: 32px 20px;
-
-        align-items: flex-start;
-        justify-content: center;
     }
 
     .navbar {
-        width: 160px;
-        min-height: 174px;
+        width: 100%;
+        min-height: 100vh;
 
         background: #48a667;
+
+        border-radius: 0;
+
+        padding: 20px;
+
+        box-shadow: none;
 
         display: flex;
         flex-direction: column;
 
         align-items: stretch;
-        justify-content: flex-start;
-
-        padding: 14px 13px;
-
-        border-radius: 4px;
-
-        box-shadow:
-            0 4px 8px rgba(0, 0, 0, 0.15);
 
         transition: 0.3s ease;
     }
@@ -240,29 +263,25 @@ width: auto;
     .logo {
         color: white;
 
-        font-size: 9px;
-        font-weight: 700;
+        font-size: 14px;
 
-        margin-bottom: 17px;
-    }
-
-    /* Hide hamburger in opened menu */
-    .hamburger {
-        display: none;
+        text-align: left;
     }
 
     .nav-menu {
         width: 100%;
 
+        flex: 1;
+
         display: flex;
         flex-direction: column;
 
         align-items: center;
+        justify-content: center;
 
         gap: 0;
-
-        flex: 1;
     }
+
     .nav-links {
         width: 100%;
 
@@ -271,39 +290,63 @@ width: auto;
 
         align-items: center;
 
-        gap: 16px;
+        gap: 28px;
     }
+
     .nav-links a {
         color: white;
-        font-size: 7px;
+
+        font-size: 14px;
         font-weight: 500;
+
         text-decoration: none;
     }
-  .account-btn {
-        margin-top: auto;
- background: white;
-color: #48a667;
-        font-size: 7px;
 
-  padding: 6px 9px;
+    .account-btn {
+        margin-top: 40px;
 
- margin-bottom: 1px;
+        background: white;
+        color: #48a667;
+
+        font-size: 12px;
+
+        padding: 10px 16px;
+
+        border-radius: 3px;
     }
+
+    .hamburger {
+        display: none;
+    }
+
     .close-btn {
         display: none;
     }
 }
+
+
 /* 
    SMALL MOBILE
 */
+
 @media (max-width: 380px) {
+
     .navbar {
-width: 155px;
+        width: 100%;
+        min-height: 100vh;
+
+        padding: 18px;
     }
+
     .nav-links {
-        gap: 15px;
+        gap: 24px;
     }
+
     .nav-links a {
-        font-size: 6.5px;
+        font-size: 13px;
+    }
+
+    .account-btn {
+        font-size: 11px;
     }
 }
