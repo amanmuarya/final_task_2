@@ -1,7 +1,6 @@
 /* 
    MAIN NAVBAR WRAPPER
  */
-
 .navbar-wrapper {
     width: 100%;
     display: flex;
@@ -10,8 +9,8 @@
 }
 
 .navbar {
-    width: 500px;
-    min-height: 48px;
+    width: 950px;
+    min-height: 58px;
 
     background: #ffffff;
 
@@ -30,19 +29,15 @@
     position: relative;
     z-index: 100;
 }
-
-
 /* 
    LOGO
 */
 
 .logo {
-    font-size: 11px;
+    font-size: 18px;
     font-weight: 700;
-    color: #48a667;
+    color: #2ec360;
 }
-
-
 /*
    NAV MENU
  */
@@ -63,9 +58,9 @@
 
 .nav-links a {
     text-decoration: none;
-    font-size: 8px;
+    font-size: 15px;
     font-weight: 500;
-    color: #62957a;
+    color: #1e8d52;
     transition: 0.2s ease;
 }
 
@@ -80,12 +75,11 @@
 
 .account-btn {
     border: none;
-    background: #48a667;
+    background: #23c95a;
     color: white;
 
-    font-size: 7px;
+    font-size: 11px;
     font-weight: 700;
-
     padding: 7px 9px;
 
     border-radius: 2px;
@@ -98,8 +92,6 @@
 .account-btn:hover {
     background: #388e56;
 }
-
-
 /* 
    HAMBURGER
  */
@@ -126,8 +118,6 @@
 
     margin: 4px 0;
 }
-
-
 /* 
    CLOSE BUTTON
 */
@@ -144,13 +134,10 @@
 
     cursor: pointer;
 }
-
-
 /*
    TABLET
    768px - 1023px
  */
-
 @media (min-width: 768px) and (max-width: 1023px) {
 
     .navbar-wrapper {
@@ -204,7 +191,6 @@
         color: white;
         font-size: 10px;
     }
-
     .account-btn {
         background: white;
         color: #48a667;
@@ -213,7 +199,6 @@
 
         padding: 7px 10px;
     }
-
     .hamburger {
         display: none;
     }
@@ -222,7 +207,6 @@
         display: none;
     }
 }
-
 
 /* 
    MOBILE
@@ -244,19 +228,15 @@
         width: 100%;
         min-height: 100vh;
 
-        background: #48a667;
-
+background: #48a667;
         border-radius: 0;
-
         padding: 20px;
 
         box-shadow: none;
 
         display: flex;
         flex-direction: column;
-
         align-items: stretch;
-
         transition: 0.3s ease;
     }
 
